@@ -1,0 +1,62 @@
+{
+  "name": "fourth-layout",
+  "private": true,
+  "version": "0.0.1",
+  "description": "fourth layout in layout studies",
+  "scripts": {
+    "buildSass": "gulp buildSass",
+    "buildPug": "gulp buildPug",
+    "buildGulp": "cross-env ENVVAR=production gulp build",
+    "buildJS": "webpack --env production",
+    "watchSass": "gulp watchSass",
+    "watchPug": "gulp watchPug",
+    "watchGulp": "gulp watch",
+    "watchJS": "webpack",
+    "prefix": "gulp addPrefix",
+    "build": "run-s buildGulp buildJS",
+    "watch": "run-p watchGulp watchJS",
+    "newBuild": "run-s buildSass buildJS",
+    "newWatch": "run-p watchSass watchJS"
+  },
+  "browserslist": [
+    "defaults"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/barabel/Mom-look-I-am-layout-designer.git"
+  },
+  "keywords": [
+    "fourth",
+    "layout"
+  ],
+  "author": "barabel",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/barabel/Mom-look-I-am-layout-designer/issues"
+  },
+  "homepage": "https://github.com/barabel/Mom-look-I-am-layout-designer#readme",
+  "devDependencies": {
+    "@glidejs/glide": "^3.4.1",
+    "autoprefixer": "^10.1.0",
+    "cross-env": "^7.0.3",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^7.0.1",
+    "gulp-if": "^3.0.0",
+    "gulp-pug": "^4.0.1",
+    "gulp-sass": "^4.1.0",
+    "normalize.css": "^8.0.1",
+    "npm-run-all": "^4.1.5",
+    "postcss": "^8.2.1",
+    "postcss-cli": "^8.3.1",
+    "pug": "^3.0.0",
+    "pug-cli": "^1.0.0-alpha6",
+    "sass": "^1.30.0",
+    "video.js": "^7.10.2",
+    "viewerjs": "^1.9.0",
+    "webpack": "^5.17.0",
+    "webpack-cli": "^4.4.0"
+  },
+  "dependencies": {
+    "gsap": "^3.11.1"
+  }
+}

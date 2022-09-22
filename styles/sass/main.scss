@@ -1,0 +1,63 @@
+html {
+	overflow-y: scroll;
+	height: 100%;
+	-webkit-overflow-scrolling: touch;
+}
+body {
+	overflow-y: visible;
+	position: relative;
+  height: unset;
+}
+html, body {
+	overflow-x: hidden;
+	margin: 0;
+}
+
+.container {
+  --width: 400%;
+	width: var(--width);
+	height: 100vh;
+	display: flex;
+	flex-wrap: nowrap;
+}
+
+.firstContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: yellow;
+}
+
+.lastContainer {
+  display: flex;
+  height: 100vh;
+  background: yellow;
+}
+
+.panel {
+  min-width: 100vw!important;
+}
+button {
+  position: fixed;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.red {
+  background-color: red;
+}
+
+.orange {
+  background-color: orange;
+}
+
+.purple {
+  background-color: purple;
+}
+
+.blue {
+  background-color: lightblue;
+}

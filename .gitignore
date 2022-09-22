@@ -1,0 +1,5 @@
+.idea/
+node_modules/
+scripts/index.js
+scripts/index.js.LICENSE.txt
+styles/css/*
